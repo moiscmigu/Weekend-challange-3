@@ -1,0 +1,42 @@
+
+.taskDiv {
+    background-color: rgb(244, 197, 66);
+    height:inherit;
+    width:100%;
+    text-align:center;
+    background: linear-gradient(to bottom right, #f4c542, rgb(244, 149, 65))
+}
+#task {
+    font-size: 1.5em;
+    display: inline-block;
+
+}
+
+#taskSelector {
+    float: right;
+}
+
+#completeButton {
+    font-size: 1.3em;
+    background-color:  #5;
+    border: none;
+    margin: 0.6em;
+    padding: 12px 28px;
+    float: right;
+}
+
+#deleteButton {
+    float: left;
+
+}
+
+#hide {
+    display: none;
+}
+
+.green {
+    background-color: green;
+    border:1px solid black;
+    height:inherit;
+    width:100%;
+}

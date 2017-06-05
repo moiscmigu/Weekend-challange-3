@@ -1,0 +1,15 @@
+table name = to_do_list_table
+db name =  to_do_list_db;
+
+
+1.to change the task row to Y for the corresponding name
+connection.query("UPDATE to_do_list_table SET completed = 'Y' WHERE task LIKE($1)", [req.body.div]);
+
+2. Selects everything from the to_do_list_table
+var resultSet = connection.query('SELECT * FROM to_do_list_table');
+
+3.Deletes the entire row to the corresponding name
+connection.query("DELETE FROM to_do_list_table WHERE task LIKE $1", [req.body.text]);
+
+4. Adds a new row of the name from the input box and a task of N to the db
+connection.query("INSERT INTO to_do_list_table (task, completed) VALUES($1, $2)", [req.body.toDo, req.body.completed]);
