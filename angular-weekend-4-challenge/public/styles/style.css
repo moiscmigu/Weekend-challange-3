@@ -1,0 +1,43 @@
+img {
+    height: 20em;
+    width:20em;
+}
+
+
+.imgContainer {
+    height:20em;
+    width:20em;
+    display: inline-block;
+    margin: 2em;
+    border: 1px solid black;
+
+}
+
+.like {
+    height: 1.5em;
+    width:1.5em;
+    display: inline-block;
+    margin-top: 2em;
+}
+
+.desc {
+    height: 20em;
+    width:20em;
+    text-align: center;
+}
+
+.commentBox {
+    width:320px;
+}
+
+.addComment {
+    margin-left:7.8em;
+    margin-top:1em;
+}
+
+h1 {
+    text-align: center;
+}
+body {
+    background-color: #cdc0b7;
+}

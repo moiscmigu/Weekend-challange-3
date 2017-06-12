@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>angular-weekend-4-challenge</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <script src="vendors/angular.min.js" charset="utf-8"></script>
+        <script src="scripts/script.js" charset="utf-8"></script>
+    </head>
+    <body ng-app='myApp'>
+        <h1>Gallery</h1>
+        <div class="container" ng-controller='ng-angular-pictures as ai'>
+            <div class='imgContainer' ng-repeat="pic in ai.photos" >
+                <img ng-src="{{pic.img}}" ng-show= "pic.visible" ng-click='ai.toggleShow($index)'>
+                <p class='desc'ng-hide="pic.visible" ng-click='ai.toggleShow($index)'>{{pic.desc}}</p>
+                <p ng-model='ai.like' ng-click = 'ai.addLike($index)'> <img src="images/like.png" class='like'>{{pic.likes}}</p>
+                <input   class='commentBox' ng-model='ai.comment' type='text'></input>
+                <button class='addComment'>----Add Comment----</button>
+            </div>
+
+        </div>
+    </body>
+</html>
